@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles-survey-form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Novel Preferences Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to complete the survey</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label> <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label> <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email" required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age <span class="clue">(optional)</span> </label> <input id="number" name="age" type="number" min=10 max=99 class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite novel genre?</p>
+          <label><input name="user-recommend" value="fantasy" type="radio" class="input-radio" checked="">
+Fantasy</label>
+          <label><input name="user-recommend" value="science-fiction" type="radio" class="input-radio" checked="">Science-Fiction</label>
+          <label><input name="user-recommend" value="horror" type="radio" class="input-radio" checked="">Horror</label>
+          <label><input name="user-recommend" value="romance" type="radio" class="input-radio" checked="">Romance</label>
+        </div>
+        <div class="form-group">
+          <p>What do you consider to be the most important aspect of a novel?</p>
+          <select id="favorite" name="favorite" class="form-control">
+            <option disabled selected value>Select an option</option>
+            <option value="writing-style">Writing Style</option>
+            <option value="character -development">Character Development</option>
+            <option value="story-plot">Story Plot</option>
+            <option value="viewpoint-dialogue">Viewpoint & Dialogue</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Have you read any of the following novels? <span class="clue">(Check all that apply)</span></p>
+          <label><input name="prefer" value="none" type="checkbox" class="input-checkbox">None</label>
+          <label><input name="prefer" value="howl" type="checkbox" class="input-checkbox">Howl's Moving Castle</label>
+          <label><input name="prefer" value="ice-fire" type="checkbox" class="input-checkbox">A Song of Ice and Fire</label>
+          <label><input name="prefer" value="blazing-world" type="checkbox" class="input-checkbox">The Blazing World</label>
+          <label><input name="prefer" value="dune" type="checkbox" class="input-checkbox">Dune</label>
+          <label><input name="prefer" value="three-body-problem" type="checkbox" class="input-checkbox">The Three-Body Problem</label>
+          <label><input name="prefer" value="hauting-house" type="checkbox" class="input-checkbox">The Haunting of Hill House</label>
+          <label><input name="prefer" value="salem-lot" type="checkbox" class="input-checkbox">Salem’s Lot</label>
+          <label><input name="prefer" value="frankenstein" type="checkbox" class="input-checkbox">Frankenstein</label>
+          <label><input name="prefer" value="jane-eyre" type="checkbox" class="input-checkbox">Jane Eyre</label>
+          <label><input name="prefer" value="romeo-juliet" type="checkbox" class="input-checkbox">Romeo and Juliet</label>
+        </div>
+        <div class="form-group">
+          <p>Briefly describe one of your favorite novel<span class="clue">(optional)</span></p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your thought here"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
